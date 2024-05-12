@@ -1,6 +1,6 @@
 var currentURL = window.location.pathname;
     if (!currentURL.includes('/Login/') && localStorage.getItem('password') !== 'AZUL') {
-        window.location.href = '../Login/index.html';
+        window.location.href = './Login/index.html';
         document.getElementById('content').style.display = 'block';
     }
     if (currentURL.includes('/Login/') && localStorage.getItem('password') === 'AZUL') {
@@ -24,4 +24,3 @@ function clearCache() {
     localStorage.removeItem('password');
     location.reload();
 }
-
