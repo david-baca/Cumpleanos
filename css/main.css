@@ -20,6 +20,11 @@
     transition: perspective(3rem);
 }
 .targeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: serif;
+    font-size: 80%;
     border-radius: 5%;
     padding: 2%;
     width: 20rem;

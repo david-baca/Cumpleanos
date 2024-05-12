@@ -3,8 +3,8 @@ var currentURL = window.location.pathname;
         window.location.href = '../Login/index.html';
         document.getElementById('content').style.display = 'block';
     }
-    if (!currentURL.includes('/Targeta/') && localStorage.getItem('password') === 'AZUL') {
-        window.location.href = '../Targeta/index.html';
+    if (currentURL.includes('/Login/') && localStorage.getItem('password') === 'AZUL') {
+        window.location.href = '../index.html';
         document.getElementById('content').style.display = 'block';
     }
 function login() {
@@ -24,3 +24,4 @@ function clearCache() {
     localStorage.removeItem('password');
     location.reload();
 }
+
