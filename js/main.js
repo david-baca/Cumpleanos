@@ -1,10 +1,10 @@
 var currentURL = window.location.pathname;
     if (!currentURL.includes('/Login/') && localStorage.getItem('password') !== 'AZUL') {
-        window.location.href = '/Login/index.html';
+        window.location.href = '/Cumpleanos/Login/index.html';
         document.getElementById('content').style.display = 'block';
     }
     if (currentURL.includes('/Login/') && localStorage.getItem('password') === 'AZUL') {
-        window.location.href = '../index.html';
+        window.location.href = 'Cumpleanos/index.html';
         document.getElementById('content').style.display = 'block';
     }
 function login() {
