@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.uno{
+    width: 100%;
+    height: 100vh;
+    background: rgb(6, 4, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.empaque{
+    width: auto;
+    height: 30rem;
+    position: relative;
+    transition: perspective(3rem);
+}
+.targeta{
+    border-radius: 5%;
+    padding: 2%;
+    width: 20rem;
+    height: 100%;
+    background: #fff;
+    transition: 1s;
+}
+
+.portada{
+    border-radius: 5%;
+    width: 20rem;
+    height: 100%;
+    bottom: 100%;
+    background: #0598e1;
+    z-index: 2;
+    backface-visibility: visible;
+    transform-style: preserve-3d;
+    position: relative;
+    transform-origin: left;
+    transition: 1s;
+}
+.portada::after{
+    border-radius: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    content: 'FECIDADES :D';
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#1b0596, #3dbec3);
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;    
+    backface-visibility: hidden;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empaque:hover .targeta{
+    /*transform: perspective(10000px) translateZ(0rem);*/
+    /*transform: perspective(10000px) rotate3d(0,0,0, 180deg);*/
+    transition: 1s;
+}
+.empaque:hover .portada{
+    transform: perspective(100rem) rotate3d(0,1,0,-180deg) translatex(0rem);
+    transition: 1s;
+}

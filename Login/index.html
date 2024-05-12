@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center align-content-center" style="min-height: 100vh;">
+        <div class="col-11 col-sm-8 col-lg-4 p-5 border-secondary border-opacity-75 border-1 border rounded-2">
+            <div class="col-12 m-1" style="
+            background-image: url(./img/STK.png);
+            background-size: auto 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 5rem;
+            ">
+            </div>
+            <div class="col-12 text-center">
+                <h2>Iniciar Sesion</h2>
+            </div>
+
+            <div class="form-floating">
+                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                <label for="floatingPassword">Contreseña</label>
+            </div>
+
+            <div class="mt-5">
+                <h6 class="text-secondary">
+                    Por favor identificate para poder proceder
+                </h6>
+            </div>
+            
+            <div class="col-12 mt-5 d-flex justify-content-between align-items-center">
+                <a class="link-primary text-decoration-none">
+                    <h6 class="m-0">( '-' )</h6>
+                </a>
+                <button onclick="login()" class="btn-primary btn rounded-1">
+                    <h6 class="m-0 ps-1 pe-1">Sigiente</h6>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
