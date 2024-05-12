@@ -4,7 +4,7 @@ var currentURL = window.location.pathname;
         document.getElementById('content').style.display = 'block';
     }
     if (currentURL.includes('/Login/') && localStorage.getItem('password') === 'AZUL') {
-        window.location.href = 'Cumpleanos/index.html';
+        window.location.href = '../index.html';
         document.getElementById('content').style.display = 'block';
     }
 function login() {
